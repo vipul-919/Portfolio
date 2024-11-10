@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="container-header">
+        <nav>
+            <div class="left">
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Projects</a>
+                </div>
+            </div>
+            <div class="right">
+                <button class="btn">Contact</button>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <!--hero-main-->
+    <section class="hero-main">
+    <div class="hero">
+        <div class="left">
+            <img src="./img/hero-img.png" alt="">
+        </div>
+        <div class="right">
+            <h6>Vipul Yadav</h6>
+            <h1>I'm a Web
+                 <span>developer</span></h1>
+            <p> with a background in Information Technology. I enjoy building user-friendly digital experiences and am always eager to learn and bring creativity to every project.</p>
+            <button class="btn">DOWNLOAD CV</button>
+        </div>
+    </div>
+</section>
+    <!--About Section-->
+    <section class="About-us">
+    <div class="about">
+        <div class="left">
+            <img src="./img/hero-img.png" alt="img">
+        </div>
+        <div class="right">
+           <h1>About <span>Me</span></h1>
+           <h3>Hello! i'm Vipul Yadav</h3>
+           <p>Passionate web developer with a BSc in Information Technology and 
+             expertise in both front-end and back-end technologies, including 
+             JavaScript, React, HTML, CSS, MongoDB, and MySQL. With strong communication
+             and task management skills, I thrive in collaborative environments and am 
+             committed to improving my coding abilities through hands-on projects.
+             I am excited to bring a user-focused, problem-solving approach to a
+             full-stack developer role.</p>
+        </div>
+    </div>
+</section>
+<!--skill section-->
+<section class="my_skill">
+    <div class="skills-container">
+        <h2>My Skills</h2>
+        <div class="skill HTML5">
+          <span class="skill-name">HTML5</span>
+          <div class="skill-bar"><div class="skill-bar-inner"></div></div>
+          <span class="percentage">90%</span>
+        </div>
+        <div class="skill CSS3">
+          <span class="skill-name">Css3</span>
+          <div class="skill-bar"><div class="skill-bar-inner"></div></div>
+          <span class="percentage">80%</span>
+        </div>
+        <div class="skill javascript">
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar"><div class="skill-bar-inner"></div></div>
+          <span class="percentage">75%</span>
+        </div>
+        <div class="skill react">
+          <span class="skill-name">React</span>
+          <div class="skill-bar"><div class="skill-bar-inner"></div></div>
+          <span class="percentage">65%</span>
+        </div>
+        <div class="skill MYSql">
+            <span class="skill-name">MYSql</span>
+            <div class="skill-bar"><div class="skill-bar-inner"></div></div>
+            <span class="percentage">85%</span>
+          </div>
+        <div class="skill MongoDB">
+          <span class="skill-name">MongoDB</span>
+          <div class="skill-bar"><div class="skill-bar-inner"></div></div>
+          <span class="percentage">80%</span>
+        </div>
+      </div>
+</section>
+<section class="Portfolio">
+    <div class="portfolio-container">
+        <h2>My Latest Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="./img/foodieland.jpeg" alt="Foodieland">
+              <p><a href="#">Foodieland</a></p>
+              <button class="view-more-btn" onclick="openModal('Foodieland')">View More</button>
+            </div>
+            <div class="portfolio-item">
+              <img src="./img/book-store.jpeg" alt="Book-Store">
+              <p><a href="#">Book-Store</a></p>
+              <button class="view-more-btn" onclick="openModal('Book-Store')">View More</button>
+            </div>
+            <div class="portfolio-item">
+              <img src="./img/Trevel.jpeg" alt="Travel #7">
+              <p><a href="#">Travel #7</a></p>
+              <button class="view-more-btn" onclick="openModal('Travel #7')">View More</button>
+            </div>
+            <div class="portfolio-item">
+              <img src="./img/canteen-food.jpeg" alt="Canteen-Food">
+              <p><a href="#">Canteen-Food</a></p>
+              <button class="view-more-btn" onclick="openModal('Canteen-Food')">View More</button>
+            </div>
+          </div>
+        
+          <!-- Modal Pop-up -->
+          <div class="modal" id="portfolioModal">
+            <div class="modal-content">
+              <span class="close-btn" onclick="closeModal()">✖</span>
+              <div id="modalInfo">
+                <!-- Modal information will be populated here by JavaScript -->
+              </div>
+            </div>
+          </div>
+        
+         
+          <!--
+          <div class="portfolio-item">
+            <img src="./img/foodieland.jpeg" alt="Cool Band Name Concert">
+            <p><a href="#">Cool Band Name Concert</a></p>
+            <button class="view-more-btn">View More</button>
+          </div>
+          <div class="portfolio-item">
+            <img src="./img/foodieland.jpeg" alt="Jada's 6th Birthday">
+            <p><a href="#">Jada's 6th Birthday</a></p>
+            <button class="view-more-btn">View More</button>
+          </div>
+          -->
+        </div>
+</section>
+
+<script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --light:#F2F2F2;
+    -webkit-font-smoothing:antialiased;
+}
+body {
+    font-family: 'Poppins', serif;
+  }
+  
+header{
+    background-color: var(--dark);
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);*/
+}
+.container-header{
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color: aqua;
+}
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+}
+header nav .left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .container-header{
+    margin-right: 3rem;
+}
+.right{
+    padding-left: 5rem;
+}
+.right .btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: burlywood;
+    color: var(--dark);
+}
+.right .btn:hover{
+    background:transparent;
+    border-color: burlywood;
+    color: #F2F2F2;
+}
+.hero{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+    height: 577px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: aqua;
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    color: #F2F2F2;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: aqua;
+    /*display: block;*/
+}
+p {
+    color: #F2F2F2;
+    max-width: 500px; 
+    line-height: 1.6; 
+}
+.About-us {
+    height: 850px;
+    padding-top: 8rem;
+    
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .right p{
+    color: #161616;
+}
+.about .left{
+    padding-right: 2rem;
+}
+span {
+    color: aqua;
+}
+.about .right h1{
+    font-weight: 100;
+    margin: 1rem;
+}
+.about .right h3{
+    font-size: large;
+    font-weight: 600;
+    margin: 1rem;
+}
+.about .right p{
+    color: darkgray;
+    margin: 1rem;
+}
+/*skill_section*/
+.my_skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 880px;
+    background-color: #161616;
+}
+.skills-container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .skills-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #F2F2F2;
+    padding-left: 10rem;
+  }
+  
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .skill-name {
+    width: 30%;
+    text-align: left;
+    color: cadetblue;
+  }
+  
+  .skill-bar {
+    width: 65%;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-bar-inner {
+    height: 8px;
+    background-color: burlywood;
+  }
+  
+  .percentage {
+    margin-left: 10px;
+    width: 5%;
+    color: cadetblue;
+  }
+  
+  /* Individual skill levels */
+  .HTML5 .skill-bar-inner { width: 90%; }
+  .CSS3 .skill-bar-inner { width: 80%; }
+  .javascript .skill-bar-inner { width: 75%; }
+  .react .skill-bar-inner { width: 65%; }
+  .MYSql .skill-bar-inner { width: 85%; }
+  .MongoDB .skill-bar-inner { width: 80%; }
+  /*Portfolio_section*/
+/* Existing Styles */
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .Portfolio {
+    padding-left: 17rem;
+  }
+  
+  /* Center the heading and add some margin */
+  .portfolio-container h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Full-screen grid layout with 3 rows and 2 columns */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjust height based on header size */
+  }
+  
+  /* Individual portfolio items */
+  .portfolio-item {
+    background-color: #3e4c5b;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .portfolio-item p {
+    margin: 10px 0 5px;
+    font-size: 1em;
+  }
+  
+  .portfolio-item p a {
+    color: burlywood;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .portfolio-item p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styling */
+  .view-more-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: burlywood;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #3e4c5b;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr; /* Stack items in a single column on small screens */
+    }
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures modal is on top */
+  }
+  
+  .modal-content {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    color: black;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: #ff1a23;
+  }
+  
+  /* Modal content styles */
+  .modal-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+  }
+  
+  .modal-content p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: black;
+  }
+  
+  .modal-content .portfolio-tag {
+    font-weight: bold;
+    color: burlywood;
+    font-size: 0.9em;
+  }
+  
+  .modal-content a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .modal-content a:hover {
+    text-decoration: underline;
+  }
+  
