@@ -56,4 +56,23 @@ function openModal(itemTitle) {
     const modal = document.getElementById('portfolioModal');
     modal.style.display = 'none';
   }
-  
+  // Get the button
+// Get the button
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// Show the button when the user scrolls down
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";  // Show the button
+    } else {
+        mybutton.style.display = "none";  // Hide the button
+    }
+};
+
+// Scroll to the top smoothly when the button is clicked
+mybutton.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // Smooth scroll
+    });
+}

@@ -13,45 +13,63 @@ body {
     font-family: 'Poppins', serif;
   }
   
-header{
+/* Fixed header and navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--dark);
-    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);*/
+    z-index: 1000; /* Ensure it's on top */
+    padding: 1rem 0; /* Adjust padding for a more compact navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
 }
-.container-header{
+
+/* Adjust the container to ensure it's centered and fits within the fixed navbar */
+.container-header {
     max-width: 1400px;
     padding: 0 15px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-header nav .left a{
+
+/* Styling for navigation links */
+header nav .left a {
     color: var(--pure);
     text-decoration: none;
     margin-right: 2rem;
     text-transform: uppercase;
     transition: all .3s ease;
 }
-header nav .left a:hover{
+
+/* Hover effect for links */
+header nav .left a:hover {
     color: aqua;
 }
-nav{
-   display: flex;
-   align-items: center;
-   justify-content: space-between; 
-}
-header nav .left{
+
+/* Flexbox for navbar layout */
+nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-header nav{
-    padding: 2rem 0;
+
+/* Container for left items */
+header nav .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-header nav .container-header{
-    margin-right: 3rem;
-}
-.right{
+
+/* Additional padding for right section */
+.right {
     padding-left: 5rem;
 }
-.right .btn{
+
+/* Style for button */
+.right .btn {
     padding: 0.8rem 3rem;
     font-size: 1rem;
     font-weight: 600;
@@ -62,11 +80,31 @@ header nav .container-header{
     background-color: burlywood;
     color: var(--dark);
 }
-.right .btn:hover{
-    background:transparent;
+
+/* Button hover effect */
+.right .btn:hover {
+    background: transparent;
     border-color: burlywood;
     color: #F2F2F2;
 }
+
+/* Adjust body content to avoid overlap under fixed navbar */
+body {
+    padding-top: 80px; /* Adjust based on your navbar height */
+}
+
+/* Optional: Add media query for responsiveness */
+@media (max-width: 768px) {
+    .right {
+        padding-left: 2rem; /* Adjust padding on smaller screens */
+    }
+    header nav .container-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/*hero-section*/
 .hero{
     background-color: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
@@ -339,4 +377,25 @@ span {
   .modal-content a:hover {
     text-decoration: underline;
   }
-  
+  /*toggle_btn*/
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;  /* Initially hidden */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
