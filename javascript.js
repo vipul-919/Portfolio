@@ -20,7 +20,7 @@ function openModal(itemTitle) {
         role: "Full Stack",
         link: "https://book-store-hazel-one.vercel.app/index.html"
       },
-      "Travel #7": {
+      "Travel": {
         title: "Travel App Landing Page",
         description: "Travel is a website that helps users explore popular travel destinations, book trips, and access helpful travel guides and tips..",
         //created: "18 Feb 2024",
@@ -39,7 +39,7 @@ function openModal(itemTitle) {
     };
   
     const content = portfolioData[itemTitle];
-  
+
     modalInfo.innerHTML = `
       <span class="portfolio-tag"></span>
       <h2 class="portfolio-title">${content.title}</h2>
